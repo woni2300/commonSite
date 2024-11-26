@@ -42,19 +42,19 @@ class CarouselComp extends Component {
                         <Carousel.Caption>
                             <h3 className='carousel-caption-a'>여러분의 경험과 함께하는 사이트 입니다.</h3>
                         </Carousel.Caption>
-                        <img src="https://picsum.photos/1135?random=1" alt="" />
+                        <img src="https://picsum.photos/1135?random=1" alt="" width={'100%'} />
                     </Carousel.Item>
                     <Carousel.Item>
                         <Carousel.Caption>
                             <h3 className='carousel-caption-a'>여러분의 이야기를 공유하십시오!</h3>
                         </Carousel.Caption>
-                        <img src="https://picsum.photos/1135?random=11" alt="" />
+                        <img src="https://picsum.photos/1135?random=11" alt="" width={'100%'} />
                     </Carousel.Item>
                     <Carousel.Item>
                         <Carousel.Caption>
                             <h3 className='carousel-caption-a'>지금 바로 가입하세요.</h3>
                         </Carousel.Caption>
-                        <img src="https://picsum.photos/1135?random=111" alt="" />
+                        <img src="https://picsum.photos/1135?random=111" alt="" width={'100%'} />
                     </Carousel.Item>
                     
                 </Carousel>

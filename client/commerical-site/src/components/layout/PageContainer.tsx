@@ -33,19 +33,19 @@ class PageContainer extends Component<{},PageContainerState> {
                         </section>
                         <section className="col-md-12 bg-dimgrey p-3">
                             <h2 className='' >My Contents #2 </h2>
-                            <img src="https://picsum.photos/1135?random=2" alt="" />
+                            <img src="https://picsum.photos/1135?random=2" alt="" width={'100%'}/>
                         </section>
                         <section className="col-md-12 bg-dimgrey p-3">
                             <h2 className='' >My Contents #3 </h2>
-                            <img src="https://picsum.photos/1135?random=3" alt="" />
+                            <img src="https://picsum.photos/1135?random=3" alt="" width={'100%'} />
                         </section>
                         <section className="col-md-12 bg-dimgrey p-3">
                             <h2 className='' >My Contents #4 </h2>
-                            <img src="https://picsum.photos/1135?random=4" alt=""/>
+                            <img src="https://picsum.photos/1135?random=4" alt="" width={'100%'}/>
                         </section>
                         <section className="col-md-12 bg-dimgrey p-3">
                             <h2 className='' >My Contents #5 </h2>
-                            <img src="https://picsum.photos/1135?random=5" alt="" />
+                            <img src="https://picsum.photos/1135?random=5" alt="" width={'100%'}/>
                         </section>
                     </main>
                 </div>

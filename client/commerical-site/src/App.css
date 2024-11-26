@@ -161,8 +161,9 @@ footer {
 /* 모바일 화면 크기(최대 768px)에서 스타일 변경 */
 @media (max-width: 768px) {
   .footer .license {
-    font-size: 14px; /* 폰트 크기를 조금 작게 */
+    font-size: 12px; /* 폰트 크기를 조금 작게 */
     padding: 10px; /* 패딩을 줄여서 공간 절약 */
+    width : 100%;
   }
 
   /* 모바일 화면에서는 Quick Menu도 좀 더 세로로 정렬하도록 */
