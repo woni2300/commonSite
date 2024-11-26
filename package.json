@@ -1,0 +1,22 @@
+{
+  "name": "commonsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && cd commerical-site && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill others-on-fail \"yarn client\"  \"yarn server\"  "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.1.0",
+    "express": "^4.21.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7"
+  }
+}

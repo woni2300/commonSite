@@ -1,0 +1,177 @@
+/* App 전체 레이아웃을 Flexbox로 구성 */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 화면 높이를 최소로 맞춤 */
+}
+
+/* Header, Footer는 고정 크기 */
+footer {
+  flex-shrink: 0;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main은 화면의 남은 공간을 채움 */
+main {
+  margin-top:80px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;  
+  align-items: center; /* 가로 가운데 정렬 */
+  background-color: #e9ecef;
+  
+}
+
+.main-content{
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+/* Main의 기본 높이 */
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px; /* 최소 높이 */
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+
+header {
+  flex-shrink: 0; /* 크기를 줄이지 않음 */  
+  background-color: rgba(0, 0, 0, 0.8)!important;
+  transition: all;  
+  color: white; /* 텍스트 색상 */
+  padding: 5px 15px; /* 여백 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 하단 그림자 */
+  transition: background-color 0.3s;
+  position: absolute;
+  width: 100vw;
+  z-index: 999;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between; /* 양쪽 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  background-color: rgba(0, 0, 0, 0)!important;
+  
+}
+
+
+
+
+footer .footer {
+  flex-shrink: 0; /* 크기를 줄이지 않음 */  
+  background-color:black;
+  transition: all;  
+  min-height: 200px;
+  color:white;
+  display: flex;
+  padding: 20px;
+}
+.footer .license{
+  width: 20vw;
+  padding: 20px;
+}
+
+footer .navbar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+footer .navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+
+header .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+
+header .navbar-nav {
+  display: flex;
+  gap: 15px; /* 메뉴 간격 */
+  flex-direction: row;
+  
+}
+
+
+header .navbar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header .navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  min-height: calc(100vh); /* 화면 높이에서 헤더와 푸터 높이를 뺀 영역 */
+}
+
+footer {
+  height: 40px; /* 푸터 높이 */
+  background-color: #f8f9fa; /* 푸터 배경색 */
+  text-align: center;
+  line-height: 40px; /* 텍스트 수직 정렬 */
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 3.1rem;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0)!important;
+}
+.header-word {
+  width: 40vw;
+}
+.top-btn {
+  position: absolute;
+  z-index: 100;
+  top : 90vh;
+  left : 50vw;
+}
+
+
+.carousel-caption-a {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: '100%';
+}
+
+/* 모바일 화면 크기(최대 768px)에서 스타일 변경 */
+@media (max-width: 768px) {
+  .footer .license {
+    font-size: 14px; /* 폰트 크기를 조금 작게 */
+    padding: 10px; /* 패딩을 줄여서 공간 절약 */
+  }
+
+  /* 모바일 화면에서는 Quick Menu도 좀 더 세로로 정렬하도록 */
+  .footer .navbar-nav {
+    display: block;
+    padding: 10px 0; /* 상하 패딩 */
+  }
+
+  .footer .navbar-nav div {
+    margin-bottom: 8px; /* 각 항목 간의 간격 */
+  }
+}
